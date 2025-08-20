@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 pintar </title>
+  <style>
+
+ .cuadrado {
+      width: 1000px; /* Ancho del cuadrado */
+      height: 1000px; /* Alto del cuadrado */
+      background-color: #fda9f2b6; /* Color inicial */
+      border: 2px solid #b4069d; /* Borde opcional */
+      margin-top: 0px;
+      height: max-content;
+
+
+    }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    height: max-content;
+}
+    
+.div1 {
+    grid-column: span 4 / span 4;
+    background-color: rgb(136, 248, 136);
+    height: max-content;
+
+}
+
+.div2 {
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+    background-color: rgb(197, 159, 233);
+    height: max-content;
+    
+}
+
+.div3 {
+    grid-column: span 4 / span 4;
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
+    background-color: rgb(31, 19, 206);
+    height: max-content;
+}
+
+.div4 {
+    grid-column: span 4 / span 4;
+    grid-row-start: 5;
+    background-color: rgb(172, 3, 214);
+    height: max-content;
+}
+        
+    </style>
+</head>
+<body>
+
+   
+<div class="parent">
+    <div class="div1">titulo
+    <h1> Controles vehiculares en Esquel </h1>
+    </div>
+
+    <div class="div2"> info de la pagina adicional
+
+         <a href="https://www.red43.com.ar/"> link a la pagina de red43</a>
+
+
+    </div>
+    <div class="div3">contenido central
+
+<img src="https://pxbcdn.red43.com.ar/red43/082025/1754337095711.jpg" alt=""  width="1000">
+
+
+        </div>
+    
+    <div class="div4"> final de la nota
+
+<p>
+    En Esquel, se controlaron 1.087 vehículos, se realizaron 880 test de alcoholemia, se comprobó un caso positivo, se labraron 17 infracciones y no se retuvieron rodados.
+
+</p>
+<p>
+     No solamente en esta localidad se realizaron controles vehiculares tambien otros lugares de la provincia de Chubut.
+     En José de San Martín, se controlaron 142 vehículos y no se registraron infracciones. En Paso de Indios, se solicitó la documentación de 7 vehículos y no se llevaron a cabo infracciones.
+     En Gobernador Costa, se verificaron 99 vehículos, no se efectuaron test de alcoholemia, no se labraron infracciones ni se retuvo ningún rodado.
+     En Río Pico, se controlaron 207 vehículos, se efectuó una infracción y no se retuvo ningún vehículo.
+     Finalmente, en Tecka, se controlaron 170 rodados, no se labró ninguna infracción ni se retuvo ningún automóvil
+</p>
+<p>
+    El Gobierno del Chubut, a través del Ministerio de Seguridad y Justicia, desarrolló operativos de fiscalización vial en rutas, ciudades y accesos, además de tareas preventivas en distintos puntos del territorio provincial ante las inclemencias climáticas por las nevadas, lluvias y las calzadas resbaladizas.
+    En total, la Subsecretaría de Seguridad Vial controló 7.540 vehículos, realizó 4.779 test de alcoholemia y retiró a 41 conductores alcoholizados de la vía pública. Los procedimientos se llevaron adelante de manera coordinada con la Policía del Chubut, Fuerzas Federales de Seguridad y organismos municipales de Tránsito.
+</p>
+<p>
+        esta nota fue de proporcionada por Red43, gracias por visitar esta pagina
+</p>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 2000px; /* Para simular un scroll largo */
+      padding: 20px;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 10px; /* Se queda "pegado" a 10px del borde superior */
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sticky">¡Soy un elemento sticky!</div>
+    <p>Desplázate hacia abajo para ver cómo este elemento se queda fijo en la parte superior.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti...</p>
+    <!-- Más contenido -->
+  </div>
+</body>
+</html>

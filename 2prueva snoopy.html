@@ -1,0 +1,96 @@
+Cómo usar @media screen en HTML con CSS
+Las media queries son una herramienta poderosa para crear diseños adaptables (responsive design) que se ajustan a diferentes tamaños de pantalla o dispositivos. Aquí te dejo una explicación sencilla y un ejemplo práctico:
+¿Qué es @media screen?
+@media screen es una media query que aplica estilos CSS únicamente cuando el contenido se muestra en una pantalla (como un monitor, teléfono o tableta). Puedes combinarla con condiciones como el ancho del viewport para personalizar el diseño.
+
+Ejemplo básico de uso
+
+HTML: Crea una estructura básica.
+CSS: Usa @media screen para aplicar estilos específicos según el tamaño de la pantalla.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Media Query</title>
+  <style>
+    /* Estilo general */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightblue;
+      color: black;
+      text-align: center;
+    }
+
+    /* Media query para pantallas menores a 768px */
+    @media screen and (max-width: 768px) {
+      body {
+        background-color: lightcoral;
+        color: white;
+      }
+    }
+
+    /* Media query para pantallas mayores a 1200px */
+    @media screen and (min-width: 1200px) {
+      body {
+        background-color: lightgreen;
+        color: darkgreen;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Hola, mundo!</h1>
+  <p>ajuste de la pantalla de la pagina</p>
+</body>
+</html>
+
+
+Explicación del código
+
+Estilo general: Se aplica a todas las pantallas.
+Media query con max-width: Cambia el fondo y el color del texto si el ancho de la pantalla es menor a 768px.
+Media query con min-width: Cambia el fondo y el color del texto si el ancho de la pantalla es mayor a 1200px.
+      <img src="https://tse3.mm.bing.net/th/id/OIP.PHkuQ9bhqcE5i9LL_1aG4gHaI3?r=0&pid=ImgDet&w=191&h=228&c=7&o=7&rm=3" alt=""  width="500">
+
+
+Consejos útiles
+
+Usa @media screen and (orientation: landscape) para detectar orientación horizontal.
+Combina min-width y max-width para definir rangos específicos.
+Siempre incluye <meta name="viewport" content="width=device-width, initial-scale=1.0"> en el <head> para un diseño adaptable en dispositivos móviles.
+
+¡Espero que te sea útil! 😊
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuente Snoopy</title>
+  <style>
+    @font-face {
+      font-family: 'SnoopyFont';
+      src: url('ruta-a-tu-fuente/SnoopyFont.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'SnoopyFont', sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #ff6347;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Hola, Snoopy!</h1>
+  <p>El Snoopy sirve para .</p>
+</body>
+</html>

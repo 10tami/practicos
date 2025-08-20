@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 pintar </title>
+  <style>
+
+ .cuadrado {
+      width: 1000px; /* Ancho del cuadrado */
+      height: 1000px; /* Alto del cuadrado */
+      background-color: #db349bb6; /* Color inicial */
+      border: 2px solid #49a3fd; /* Borde opcional */
+      margin-top: 0px;
+      height: max-content;
+
+
+    }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    height: max-content;
+}
+    
+.div1 {
+    grid-column: span 4 / span 4;
+    background-color: rgb(96, 43, 243);
+    height: max-content;
+
+}
+
+.div2 {
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+    background-color: rgb(93, 204, 248);
+    height: max-content;
+    
+}
+
+.div3 {
+    grid-column: span 4 / span 4;
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
+    background-color: rgba(7, 114, 25, 0.788);
+    height: max-content;
+}
+
+.div4 {
+    grid-column: span 4 / span 4;
+    grid-row-start: 5;
+    background-color: rgb(127, 127, 245);
+    height: max-content;
+}
+        
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="div1">
+  <h1> El 75% de las estaciones de esquí de España son públicas</h1>
+
+    </div>
+    <div class="div2"> <h3>
+         Info de la pagina adicional
+         </h3>
+
+       <a href="https://www.red43.com.ar/"> link a la pagina de red43</a>
+
+    </div>
+    <div class="div3">
+    <img src="https://www.lugaresdenieve.com/sites/default/files/la-molina_76.jpg" alt="" width="800">
+
+        </div> 
+    
+    <div class="div4"> <h2>
+        final de la nota
+        </h2>
+        
+          <p>  Ya no importaría tanto la rentabilidad privada del negocio o los beneficios extras obtenidos con la especulación urbanística a su alrededor, sino del compromiso de las distintas administraciones para mantener los beneficios generados por el impacto económico de esa industria: se calcula en una media del 20% de la economía de los pueblos con estación de esquí procede directamente de la nieve.
+Un elaborado informe del Diario económico del negocio del deporte Palco 23, ha echado cuentas: España tiene 30 estaciones de esquí alpino operativas, 29 de ellas adscritas a Asociación Turística de Estaciones de Esquí y Montaña (Atudem). Solo la catalana Port del Comte no forma parte de esta asociación.
+    </p>
+    </div>
+</div>
+</body>
+</html>

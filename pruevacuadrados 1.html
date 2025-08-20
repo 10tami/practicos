@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Prueva pintar</title>
+
+
+  <style>
+
+ .cuadrado {
+      width: 1000px; /* Ancho del cuadrado */
+      height: 500px; /* Alto del cuadrado */
+      background-color: #34db5eb6; /* Color inicial */
+      border: 5px solid #2c3e50; /* Borde opcional */
+      margin-top: 0px;
+      height: max-content;
+      background: #98a7f5;
+      background: linear-gradient(177deg, rgba(152, 167, 245, 1) 0%, rgba(252, 70, 107, 1) 100%);
+
+    }
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    height: max-content;
+}
+    
+.div1 {
+    grid-column: span 4 / span 4;
+    background-color: rgb(15, 15, 14);
+    height: max-content;
+
+}/*titulo de la pagina*/
+/*con background-color   puedon elegir el color del fondo de las letras*/
+
+.div2 {
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+    background-color: rgb(250, 129, 30);
+    height: max-content;
+    
+}/*contenido central de la pagina*/
+
+.div3 {
+    grid-column: span 4 / span 4;
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
+    background-color: rgb(3, 63, 13);
+    height: max-content;
+}
+
+.div4 {
+    grid-column: span 4 / span 4;
+    grid-row-start: 5;
+    background-color: rgb(92, 92, 231);
+    height: max-content;
+}/*nota o finalde la pagina*/
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 100px;
+      padding: 0px;
+      height: max-content;
+
+            
+        width: 100%;/*apartir de aqui enpezamos a editar el fondo de la pagina*/
+        height: 200px;
+        margin-top: 600px;
+        border: 10px solid rgb(183, 72, 187) ;
+        background-attachment: fixed;/*poner imagen de fondo*/
+        background-image: url(https://th.bing.com/th/id/R.9c7a113b833751967181f62184239fb4?rik=yhbiGLrIaliUfA&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f11%2fimagenes-bonitas-de-flores-para-colocar-como-fondo-de-pantalla4.jpg&ehk=f3TGZK%2b6lMQoaKPjIeGxkvXyuNPefOt8J6lir22c9R8%3d&risl=&pid=ImgRaw&r=0);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+        }
+    .container {
+      height: max-content;
+      padding: 0px;
+    }
+/*cuando estes en boby coloca         <div class="container">
+                                         <div class="sticky"> 
+                y despues h1 con el titulo de la pagina para que te siga cuando bajas por la wep*/
+    .sticky {
+      position: sticky;
+      top: 10px; /* Se queda "pegado" a 10px del borde superior */
+      background-color: #5eb1f5;
+      padding: 0px;
+      border: 10px solid #5ce08875;
+    }/*aqui elegimos el color de fondo de las palabras que rodean a el titulo*/
+ /*practicando nomas*/ /* para hacer un comentario debes de presionar primero * y despues / y listo podes empesar a escribir tu comentario y cuando terminaste debes de escribir para finalizar */
+    
+        .div1 {
+             color: rgb(63, 245, 133);
+         text-decoration: none;
+        }
+            .div1:hover {
+                 color: rgb(231, 220, 229);
+         text-decoration: underline;
+            }
+    a {
+         color: rgb(0, 255, 98);
+         text-decoration: none;
+          }
+          a:hover {
+         color: rgb(28, 12, 252);
+         text-decoration: underline;
+    } /*con hover pintamos el enlace dela pagina*/
+    
+    h3 {
+         color: rgb(241, 221, 66);
+         text-decoration: none;
+        }
+        h3:hover {
+            color: rgb(20, 17, 20);
+         text-decoration: underline;
+        }/*con hover pintamos donde dice info de la pagina adicional*/
+    </style>
+</head>
+<body>
+<div >
+    <div class="parent">
+    <div class="div1" >
+         <div class="cuadrado">
+
+        <div class="container">
+        <div class="sticky"> 1 Noticia de Esquel</div>
+    
+
+        <h1> Noticia climatica de Esquel (04-08-2025)</h1>
+
+    </div>
+    <div class="div2">
+           <div class="container">
+            <div class="sticky">
+        <h3>
+        info de la pagina adicional
+        </h3>
+     <a href="https://youtu.be/G6zGdbx-RSM"> link youtube</a>
+    </div>
+    <div class="div3"  height: max-content;>
+    <iframe width="900" height="800" src="https://www.youtube.com/embed/G6zGdbx-RSM?si=tz4_JUbvsS6DZGOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="div4"  height: max-content;> <h4>Nota</h4>
+            <p>
+             <ul>
+             <li>
+                La nieve sorprende al barrio Malvinas
+Cuando el Cerro 21 se esconde tras las nubes blancas, significa nieve. Y a veces el viento hace que llegue a las zonas
+urbanas lindantes, como el día de hoy. El frio, asegurado para todo Esquel.
+Por Redacción Red43
+La tarde de hoy lunes auguraba nieve en muchos pronósticos para Esquel.
+             </li>
+         </ul>
+</p>
+<p>
+          <ul>
+             <li>
+Hay quien no creía, sobre todo porque nuestro territorio es variable. Hay barrios altos y barrios bajos, barrios a pleno
+sol y otros a la sombra de las lomas.
+La zona lindante al Cerro 21 se sorprendió de un inusual descenso de temperatura al mediodía, que al mirar se descubría
+cubierto de nubes blancas.
+             </li>
+         </ul>
+</p>
+<p>
+  
+ <ul>
+             <li>
+    Es cuestión de tiempo (del reloj y del clima) que la nieve empiece a insinuarse, y con suerte y algunos vientos, llega a
+la zona urbana del barrio Islas Malvinas y otras casas lindantes.
+Hoy toca esto, y con el correr de la tarde el mal tiempo se mantendrá en forma de lluvias y nieves. Pero algunas plumas
+también te pueden tocar en el horizonte.
+             </li>
+         </ul>
+    </div>
+           
+</p>
+<p>
+    
+            <ul>
+             <li>
+        esta nota fue de proporcionada por Red43, gracias por visitar esta pagina
+             </li>
+         </ul>
+    </p>
+     <a href="cuadrado 10.html">ver noticia 1</a>
+
+    </div>
+</div>
+</body>
+</html>

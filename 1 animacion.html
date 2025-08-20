@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>1 Animacion</title>
+   <style>
+      .caja {
+     position: relative;
+      overflow: hidden;
+      margin: 0px;
+      animation: entraron 40s;
+      height: max-content;
+      width: 500px;
+    }
+    .caja:hover{
+
+      animation: entrar 50s;
+    }
+    @keyframes entraron {
+      0%{
+         transform: rotate(400deg);
+      }
+      50%{
+         transform: rotate(40deg);
+      }
+      75%{
+         transform: translate(1000px);
+      }
+      to{
+         transform: scale();
+
+    }
+    }
+    @keyframes entrar {
+      25%{
+         box-shadow: 15px 10px 50px rgb(252, 39, 241);
+      }
+      50%{
+         transform: matrix(1.5);
+         box-shadow: 15px 10px 50px rgba(151, 238, 151, 0.452);
+      }
+      75%{
+         box-shadow: 15px 10px 50px royalblue ;
+      }
+      100% {
+         box-shadow: 15px 10px 50px rgba(99, 245, 99, 0.452)
+      }
+
+    }
+      .mask{
+    background-color: rgba(151, 238, 151, 0.452);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    }
+      .sticky {
+      position: sticky;
+      top: 10px; 
+      background-color: #5eb1f5;
+      padding: 0px;
+      border: 10px solid #5ce08875;
+    }
+        .div {
+             color: rgb(63, 245, 133);
+         text-decoration: none;
+        }
+            .div:hover {
+                 color: rgb(231, 220, 229);
+         text-decoration: underline;
+            }
+        h1 {
+             color: rgb(79, 110, 248);
+         text-decoration: none;
+        }
+            h1:hover {
+                 color: rgb(252, 102, 224);
+         text-decoration: underline;
+            }
+
+
+
+   </style>
+</head>
+<body>
+   <div class="caja">
+      <div class="mask"></div>
+         <div class="container"> 
+          <div class="sticky">
+   
+      <h1>Hola Gente!!!, no olviden que si lo pueden imaginar, lo pueden crear </h1>
+      <img src="https://tse3.mm.bing.net/th/id/OIP.PHkuQ9bhqcE5i9LL_1aG4gHaI3?r=0&pid=ImgDet&w=191&h=228&c=7&o=7&rm=3" alt=""  width="500">
+   </div>
+</body>
+</html>
+
+
+
+
+

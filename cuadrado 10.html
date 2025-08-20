@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 pintar </title>
+  <style>
+
+ .cuadrado {
+      width: 1000px; /* Ancho del cuadrado */
+      height: 1000px; /* Alto del cuadrado */
+      background-color: #344ddbb6; /* Color inicial */
+      border: 2px solid #502c48; /* Borde opcional */
+      margin-top: 0px;
+      height: max-content;
+      background: #98a7f5;
+      background: linear-gradient(177deg, rgba(152, 167, 245, 1) 0%, rgba(252, 70, 107, 1) 100%);
+
+
+    }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    height: max-content;
+}
+    
+.div1 {
+    grid-column: span 4 / span 4;
+    background-color: rgb(136, 248, 145);
+    height: max-content;
+
+}
+
+.div2 {
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+    background-color: rgb(9, 175, 216);
+    height: max-content;
+    
+}
+
+.div3 {
+    grid-column: span 4 / span 4;
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
+    background-color: rgb(201, 245, 4);
+    height: max-content;
+}
+
+.div4 {
+    grid-column: span 4 / span 4;
+    grid-row-start: 5;
+    background-color: rgb(7, 3, 6);
+    height: max-content;
+}
+        
+    body {
+      font-family: Arial, sans-serif;
+      margin: 100px;
+      padding: 0px;
+      height: max-content;
+       width: 100%;/*apartir de aqui enpezamos a editar el fondo de la pagina*/
+        height: 200px;
+        margin-top: 600px;
+        border: 10px solid rgb(183, 72, 187) ;
+        background-attachment: fixed;/*poner imagen de fondo*/
+        background-image: url(https://th.bing.com/th/id/OIP.vytrLGX0h_KVDnVrktwM7QHaFj?w=226&h=180&c=7&r=0&o=5&pid=1.7);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+
+    }
+
+    .container {
+      height: max-content;
+      padding: 0px;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 10px; 
+      background-color: #5eb1f5;
+      padding: 0px;
+      border: 10px solid #5ce08875;
+    }
+    
+        .div1 {
+             color: rgb(4, 63, 27);
+         text-decoration: none;
+        }
+            .div1:hover {
+                 color: rgb(109, 248, 151);
+         text-decoration: underline;
+            }
+    a {
+         color: rgb(231, 244, 245);
+         text-decoration: none;
+          }
+          a:hover {
+         color: rgb(67, 54, 250);
+         text-decoration: underline;
+    } /*con hover pintamos el enlace dela pagina*/
+    
+    h3 {
+         color: rgb(241, 221, 66);
+         text-decoration: none;
+        }
+        h3:hover {
+            color: rgb(20, 17, 20);
+         text-decoration: underline;
+        }/*con hover pintamos donde dice info de la pagina adicional*/
+
+        .div4 {
+         color: rgba(243, 243, 97, 0.575);
+         text-decoration: none;
+        }
+             .div4:hover {
+                 color: rgb(189, 78, 180);
+                text-decoration: underline;
+                }
+
+                 p {
+         color: rgb(231, 244, 245);
+         text-decoration: none;
+          }
+          p:hover {
+         color: rgb(67, 54, 250);
+         text-decoration: underline;
+    }
+              
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    
+<div class="parent">
+    <div class="div1">
+        <div class="container">
+            <div class="sticky">
+                <div class="cuadrado">
+   <h1>
+        Córdoba: la inflación de julio fue del 1,5% y el consumo descendió un 19%
+    </h1>
+
+    </div>
+    <div class="div2"> <h3>
+        info de la pagina adicional
+    </h3>
+
+       <a href="https://www.red43.com.ar/"> link a la pagina de red43</a>
+
+    </div>
+    <div class="div3">
+        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1JXYHg.img?w=768&h=518&m=6
+" alt=""  width="1000">
+        </div>
+    
+    <div class="div4"> final de la nota
+
+        <p>
+    <ul>
+        <li>
+            la inflación interanual se ubicó en 37,2 por ciento, con un acumulado del 17,1 por ciento en los primeros siete meses. La proyección para 2025 ronda el 32 por ciento, el nivel más bajo desde 2017. Sin embargo, esta desaceleración no se traduce en mejora del consumo ni en alivio para los ingresos familiares. Las ventas en volumen de comercios de cercanía, como carnicerías o verdulerías, cayeron un 19 por ciento en el periodo enero-julio comparado con el año anterior.
+            <li>
+                En este sentido, el 57,8 por ciento de los hogares cordobeses no accedió a la Canasta Básica Alimentaria, fijada en julio en 794.384 pesos para una familia tipo. De quienes sí la alcanzaron, el 72,5 por ciento lo hizo gracias a programas de asistencia estatal, como la asignación por la Asignación Universal por Hijo (AUH) o Tarjeta Alimentar.
+        </li>
+    </ul>
+</p>
+
+<p>
+    <ul>
+        <li>
+            Más de la mitad admitió suspender al menos una comida diaria; además, un 30,7 por ciento reconoció que algún integrante sintió hambre sin satisfacerlo. Un 19,6 por ciento careció de provisiones al menos un día, mientras que un 10,5 por ciento reportó que alguna persona comió solo una vez o no lo hizo durante alguna jornada del mes.
+            <li>
+                Para afrontar esta coyuntura, el 88,9 por ciento de los grupos familiares financia sus compras de comida: 43,5 por ciento con tarjeta de crédito, 37,2 por ciento fiando en el almacén, y 8,2 por ciento pidiendo dinero prestado. Un 18,9 por ciento incluso admitió solicitar alimentos o efectivo para subsistir.
+        </li>
+    </ul>
+</p>
+  <div class="cuadrado">
+     <a href="cuadrado 1.html">ver noticia 1: Volver al inicio</a>
+    </div>
+</div>

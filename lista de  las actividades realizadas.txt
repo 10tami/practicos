@@ -1,0 +1,5 @@
+lista de las actividades desde el inicio
+1) noticias (desde 1 a 10) 04/07/2025
+2) cssnoticia (desde 1 a 10) 
+3) pintar (desde 1 a 10)
+4) cuadrados (desde 1 a 10)
