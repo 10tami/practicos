@@ -110,14 +110,19 @@
 
 </head>
 <body>
-    
+ 
 
 <div class="parent">
     <div class="div1">1= pantalla que muestra los resultados</div>
 
-    <div class="div2">2= %</div>
+    <div class="div2">2= %
+
+        
+
+    </div>
 
     <div class="div3">3= √</div>
+   
 
     <div class="div4">4= x²</div>
 
@@ -149,7 +154,9 @@
 
     <div class="div18">18= +</div>
 
-    <div class="div19">19= 1</div>
+    <div class="div19">19= 1
+   
+    </div>
 
     <div class="div20">20= 2</div>
 
@@ -162,16 +169,56 @@
     <div class="div24">24= 0</div>
 
     <div class="div25">25= ,</div>
-</div>
+    </div>
     
-    <h1 id="titulo">¡Hola!?</h1>
-    <button onclick="cambiarTexto()">Haz clic aquí</button>
-
+    <h1 id="titulo">0</h1>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('√')">√</button>
+    <button onclick="muestraelnumero('x²')">x²</button>
+    <button onclick="muestraelnumero('¹/x')">'¹/x'</button>
+    <button onclick="muestraelnumero('CE')">CE<button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('1')">1</button>
+    <button onclick="muestraelnumero('0')">0</button>
+    
+    
+    
+    
+    
     <script>
-        function cambiarTexto() {
-            document.getElementById("titulo").innerText = "¡buenas noches!, en que puedo ayudarte hoy ?";
+        function let variable=""{
+            variable+=numero;
+            document.getElementById("titulo").textContent=variable;
         }
+        function suma(){
+            numeroDo = numero;
+            numero="";
+            document.getElementById("titulo2").textContent= numeroDos + "+"
+        }
+        function igual(){
+              document.getElementById("titulo").textContent= Number(numeroDos)
+        }
+
     </script>
+
+ 
 
 </body>
 </html>
