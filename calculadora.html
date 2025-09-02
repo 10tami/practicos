@@ -19,90 +19,8 @@
 .div1 {
     grid-column: span 4 / span 4;
     background-color: rgb(237, 248, 136);
-  
 }
 
-.div2 {
-    grid-row-start: 2;
-}
-
-.div3 {
-    grid-row-start: 2;
-}
-
-.div4 {
-    grid-row-start: 2;
-}
-
-.div5 {
-    grid-row-start: 2;
-}
-
-
-.div7 {
-    grid-row-start: 3;
-}
-
-.div8 {
-    grid-row-start: 3;
-}
-
-.div9 {
-    grid-row-start: 3;
-}
-
-
-.div11 {
-    grid-row-start: 4;
-}
-
-.div12 {
-    grid-row-start: 4;
-}
-
-.div13 {
-    grid-row-start: 4;
-}
-
-
-.div15 {
-    grid-row-start: 5;
-}
-
-.div16 {
-    grid-row-start: 5;
-}
-
-.div17 {
-    grid-row-start: 5;
-}
-
-
-.div19 {
-    grid-row-start: 6;
-}
-
-.div20 {
-    grid-row-start: 6;
-}
-
-.div21 {
-    grid-row-start: 6;
-}
-
-
-.div23 {
-    grid-row-start: 7;
-}
-
-.div24 {
-    grid-row-start: 7;
-}
-
-.div25 {
-    grid-row-start: 7;
-}
-        
 
 
     </style>
@@ -113,111 +31,64 @@
  
 
 <div class="parent">
-    <div class="div1">1= pantalla que muestra los resultados</div>
+    <div class="div1">
 
-    <div class="div2">2= %
-
-        
-
-    </div>
-
-    <div class="div3">3= √</div>
-   
-
-    <div class="div4">4= x²</div>
-
-    <div class="div5">5= ¹/x</div>
-
-    <div class="div6">6= ÷</div>
-
-    <div class="div7">7= CE</div>
-
-    <div class="div8">8= C</div>
-
-    <div class="div9">9= ⌫</div>
-
-    <div class="div10">10= ×</div>
-
-    <div class="div11">11= 7</div>
-
-    <div class="div12">12= 8</div>
-
-    <div class="div13">13= 9</div>
-
-    <div class="div14">14= -</div>
-
-    <div class="div15">15= 4</div>
-
-    <div class="div16">16= 5</div>
-
-    <div class="div17">17= 6</div>
-
-    <div class="div18">18= +</div>
-
-    <div class="div19">19= 1
-   
-    </div>
-
-    <div class="div20">20= 2</div>
-
-    <div class="div21">21= 3</div>
-
-    <div class="div22">22= =</div>
-
-    <div class="div23">23= ±</div>
-
-    <div class="div24">24= 0</div>
-
-    <div class="div25">25= ,</div>
-    </div>
-    
-    <h1 id="titulo">0</h1>
+    <h1 id="titulo">0</h1></div>
     <button onclick="muestraelnumero('%')">%</button>
     <button onclick="muestraelnumero('√')">√</button>
     <button onclick="muestraelnumero('x²')">x²</button>
     <button onclick="muestraelnumero('¹/x')">'¹/x'</button>
-    <button onclick="muestraelnumero('CE')">CE<button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
-    <button onclick="muestraelnumero('%')">%</button>
+    <button onclick="muestraelnumero('CE')">CE</button>
+    <button onclick="muestraelnumero('C')">C</button>
+    <button onclick="muestraelnumero('⌫')">⌫</button>
+    <button onclick="muestraelnumero('÷')">÷</button>
+    <button onclick="muestraelnumero('7')">7</button>
+    <button onclick="muestraelnumero('8')">8</button>
+    <button onclick="muestraelnumero('9')">9</button>
+    <button onclick="muestraelnumero('×')">×</button>
+    <button onclick="muestraelnumero('4')">4</button>
+    <button onclick="muestraelnumero('5')">5</button>
+    <button onclick="muestraelnumero('6')">6</button>
+    <button onclick="muestraelnumero('-')">-</button>
     <button onclick="muestraelnumero('1')">1</button>
+    <button onclick="muestraelnumero('2')">2</button>
+    <button onclick="muestraelnumero('3')">3</button>
+    <button onclick="muestraelnumero('+')">+</button>
+    <button onclick="muestraelnumero('±')">±</button>
     <button onclick="muestraelnumero('0')">0</button>
-    
-    
-    
+    <button onclick="muestraelnumero(',')">,</button>
+    <button onclick="muestraelnumero('=')">=</button>
     
     
     <script>
 
         let variable= ""
+        let numero="";
+        let opCode="";
 
         function muestraelnumero(numero){
             variable+=numero;
             document.getElementById("titulo").textContent=variable;
         }
-        function suma(){
-            numeroDo = numero;
-            numero="";
-            document.getElementById("titulo2").textContent= numeroDos + "+"
+        function option(modo){
+            numeroDos = numero;
+            numero="",
+            opCode=modo;
+            document.getElementById("titulo").textContent = numeroDos + "+"
         }
         function igual(){
-              document.getElementById("titulo").textContent= Number(numeroDos)
+            if(opCode=="-"){
+                document.getElementById("titulo").textContent = Number(numeroDos)
+        
+            }
+            if(opCode=="-"){
+                document.getElementById("titulo").textContent = numeroDos - numero
+            }
         }
+        document.getElementById("titulo").textContent = resultado
+            
+
+            
 
     </script>
 
