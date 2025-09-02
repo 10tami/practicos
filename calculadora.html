@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculadora de Tami</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de Script</title>
@@ -18,10 +18,26 @@
     
 .div1 {
     grid-column: span 4 / span 4;
-    background-color: rgb(237, 248, 136);
+    background-color: rgb(36, 235, 63);
 }
 
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0px;
+      padding: 0px;
+      height: max-content;
+       width: 100%;/*apartir de aqui enpezamos a editar el fondo de la pagina*/
+        height: 200px;
+        margin-top: 60px;
+        border: 0px solid rgb(183, 72, 187) ;
+        background-attachment: fixed;/*poner imagen de fondo*/
+        background-image: url(https://th.bing.com/th/id/R.9c7a113b833751967181f62184239fb4?rik=yhbiGLrIaliUfA&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f11%2fimagenes-bonitas-de-flores-para-colocar-como-fondo-de-pantalla4.jpg&ehk=f3TGZK%2b6lMQoaKPjIeGxkvXyuNPefOt8J6lir22c9R8%3d&risl=&pid=ImgRaw&r=0);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
 
+
+    }
 
     </style>
         
@@ -33,6 +49,7 @@
 <div class="parent">
     <div class="div1">
 
+    <h1 id="titulo2">0</h1>
     <h1 id="titulo">0</h1></div>
     <button onclick="muestraelnumero('%')">%</button>
     <button onclick="muestraelnumero('√')">√</button>
@@ -41,15 +58,15 @@
     <button onclick="muestraelnumero('CE')">CE</button>
     <button onclick="muestraelnumero('C')">C</button>
     <button onclick="muestraelnumero('⌫')">⌫</button>
-    <button onclick="muestraelnumero('÷')">÷</button>
+    <button onclick="option('÷')">÷</button>
     <button onclick="muestraelnumero('7')">7</button>
     <button onclick="muestraelnumero('8')">8</button>
     <button onclick="muestraelnumero('9')">9</button>
-    <button onclick="muestraelnumero('×')">×</button>
+    <button onclick="option('×')">×</button>
     <button onclick="muestraelnumero('4')">4</button>
     <button onclick="muestraelnumero('5')">5</button>
     <button onclick="muestraelnumero('6')">6</button>
-    <button onclick="muestraelnumero('-')">-</button>
+    <button onclick="option('-')">-</button>
     <button onclick="muestraelnumero('1')">1</button>
     <button onclick="muestraelnumero('2')">2</button>
     <button onclick="muestraelnumero('3')">3</button>
@@ -57,36 +74,46 @@
     <button onclick="muestraelnumero('±')">±</button>
     <button onclick="muestraelnumero('0')">0</button>
     <button onclick="muestraelnumero(',')">,</button>
-    <button onclick="muestraelnumero('=')">=</button>
+    <button onclick="igual()">=</button>
     
     
     <script>
 
         let variable= ""
-        let numero="";
+        let numeroDos="";
         let opCode="";
 
         function muestraelnumero(numero){
             variable+=numero;
             document.getElementById("titulo").textContent=variable;
         }
+
         function option(modo){
-            numeroDos = numero;
-            numero="",
+            numeroDos = variable;
+            variable="",
             opCode=modo;
-            document.getElementById("titulo").textContent = numeroDos + "+"
+            document.getElementById("titulo2").textContent = numeroDos + modo
         }
+
         function igual(){
-            if(opCode=="-"){
-                document.getElementById("titulo").textContent = Number(numeroDos)
+            let resultado
+            if(opCode=="+"){
+                resultado= Number(numeroDos)+Number(variable)
         
             }
             if(opCode=="-"){
-                document.getElementById("titulo").textContent = numeroDos - numero
+                resultado = numeroDos - variable
             }
-        }
-        document.getElementById("titulo").textContent = resultado
             
+            document.getElementById("titulo").textContent = resultado
+        }
+            function divicion(){
+                
+
+            }
+            function multiplicacion(){
+
+            }
 
             
 
