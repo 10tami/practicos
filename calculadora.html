@@ -13,7 +13,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr);
-    gap: 8px; 
+    gap: 8px;
+    width: 400px;
+    height: 400px; 
 }
     
 .div1 {
@@ -21,6 +23,11 @@
     background-color: rgb(169, 223, 176);
 }
 
+body {
+  background: #fff;
+  width: 400px;
+  height: 400px;
+}
 
 
     </style>
@@ -84,27 +91,35 @@
             document.getElementById("titulo2").textContent = numeroDos + modo
         }
 
-        function igual(){
-            let resultado
-            if(opCode=="+"){
-                resultado= Number(numeroDos)+Number(variable)
+ 
+            function igual(){
+                switch (opCode){
+                case "+":
+                variable = Number(numeroDos) + Number(variable)
+                break;
+                case "-":
+                variable = numeroDos - variable
+                break;
+                case "/":
+                variable = divicion(numeroDos,variable)
+                break;
+                case "×":
+                variable*=numeroDos
+                //numero= numero * numeroDos//
+                break;
+                default:
+                break
+
+                }
+                 document.getElementById("titulo").textContent = variable
+            }
+           
+      
         
-            }
-            if(opCode=="-"){
-                resultado = numeroDos - variable
-            }
-            
-            document.getElementById("titulo").textContent = resultado
-        }
-            function divicion(){
-
-
-            }
-            function multiplicacion(){
-
-            }
-
-            
+            function divicion(variable){
+            variable = Number(numeroDos) + Number(variable)
+            document.getElementById("titulo").textContent = variable 
+            } 
 
     </script>
 
