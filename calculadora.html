@@ -100,8 +100,8 @@ body {
                 case "-":
                 variable = numeroDos - variable
                 break;
-                case "/":
-                variable = divicion(numeroDos,variable)
+                case "÷":
+                variable = variable/numeroDos
                 break;
                 case "×":
                 variable*=numeroDos
@@ -114,12 +114,8 @@ body {
                  document.getElementById("titulo").textContent = variable
             }
            
-      
+
         
-            function divicion(variable){
-            variable = Number(numeroDos) + Number(variable)
-            document.getElementById("titulo").textContent = variable 
-            } 
 
     </script>
 
