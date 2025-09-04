@@ -67,7 +67,7 @@ body {
     <button onclick="muestraelnumero('±')">±</button>
     <button onclick="muestraelnumero('0')">0</button>
     <button onclick="punto(',')">,</button>
-    <button onclick="igual()">=</button>
+    <button onclick="calculos()">=</button>
     
     
     <script>
@@ -78,7 +78,7 @@ body {
         let resultado="";
 
         function raiz(variable){
-            
+              document.getElementById("titulo").textContent=Math.sqrt (variable);
         }
 
 
@@ -88,33 +88,29 @@ body {
         }
 
         function option(modo){
-            numeroDos = variable;
-            variable="",
-            opCode=modo;
-            document.getElementById("titulo2").textContent = numeroDos + modo
-        }
+            if (opCode==""){
+                guardaNumero()
+            }else if(variable!=""){
+                calculos();
+                guardaNumero()
 
+            }
+            opCode=modo;
+            document.getElementById("titulo2").textContent = variable;
+            }
+
+        
+            function guardaNumero(){
+                numeroDos= variable;
+                variable="";
+            }
  
             function igual(){
-                switch (opCode){   
-                case "+":
-                variable = Number(numeroDos) + Number(variable)
-                break;
-                case "-":
-                variable = numeroDos - variable
-                break;
-                case "÷":
-                variable = variable/numeroDos
-                break;
-                case "×":
-                variable*=numeroDos
-                //numero= numero * numeroDos//
-                break;
-                default:
-                break
+                document.getElementById("titulo2").textContent = numeroDos + opCode;
+                calculo()
+                document.getElementById("titulo").textContent = variable 
+                guardarNumero()
 
-                }
-                 document.getElementById("titulo").textContent = variable
                 
             }
           
@@ -144,6 +140,28 @@ body {
             document.getElementById("titulo").textContent=variable;
         
         }
+
+                   function calculos(){
+                switch (opCode){   
+                case "+":
+                variable = Number(numeroDos) + Number(variable)
+                break;
+                case "-":
+                variable = numeroDos - variable
+                break;
+                case "÷":
+                variable = variable/numeroDos
+                break;
+                case "×":
+                variable*=numeroDos
+                //numero= numero * numeroDos//
+                break;
+                default:
+                break
+
+                }
+                 document.getElementById("titulo").textContent = variable
+            }
 
     </script>
 
