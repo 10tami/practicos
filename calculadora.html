@@ -21,6 +21,8 @@
 .div1 {
     grid-column: span 4 / span 4;
     background-color: rgb(169, 223, 176);
+    width: 400px;
+    height: 160px; 
 }
 
 body {
@@ -46,9 +48,9 @@ body {
     <button onclick="muestraelnumero('√')">√</button>
     <button onclick="muestraelnumero('x²')">x²</button>
     <button onclick="muestraelnumero('¹/x')">'¹/x'</button>
-    <button onclick="muestraelnumero('CE')">CE</button>
-    <button onclick="muestraelnumero('C')">C</button>
-    <button onclick="muestraelnumero('⌫')">⌫</button>
+    <button onclick="CE('')">CE</button>
+    <button onclick="C('')">C</button>
+    <button onclick="borrar()">⌫</button>
     <button onclick="option('÷')">÷</button>
     <button onclick="muestraelnumero('7')">7</button>
     <button onclick="muestraelnumero('8')">8</button>
@@ -61,10 +63,10 @@ body {
     <button onclick="muestraelnumero('1')">1</button>
     <button onclick="muestraelnumero('2')">2</button>
     <button onclick="muestraelnumero('3')">3</button>
-    <button onclick="muestraelnumero('+')">+</button>
+    <button onclick="option('+')">+</button>
     <button onclick="muestraelnumero('±')">±</button>
     <button onclick="muestraelnumero('0')">0</button>
-    <button onclick="muestraelnumero(',')">,</button>
+    <button onclick="punto(',')">,</button>
     <button onclick="igual()">=</button>
     
     
@@ -78,6 +80,7 @@ body {
         function raiz(variable){
             
         }
+
 
         function muestraelnumero(numero){
             variable+=numero;
@@ -93,7 +96,7 @@ body {
 
  
             function igual(){
-                switch (opCode){
+                switch (opCode){   
                 case "+":
                 variable = Number(numeroDos) + Number(variable)
                 break;
@@ -112,14 +115,40 @@ body {
 
                 }
                  document.getElementById("titulo").textContent = variable
+                
             }
-           
+          
 
+                const punto=()=>{
+            if(variable==""){
+                variable+="0,";
+                  document.getElementById("titulo").textContent=variable;
+            }
+            if(!variable.includes(",")){
+                variable+=",";
+                 document.getElementById("titulo").textContent=variable;
+            }
+        }
+        const borrar=()=>{
+            variable=variable.slice(0,-1)
+            document.getElementById("titulo").textContent=variable;
+        }
+              const CE=()=>{
+            variable=""
+            document.getElementById("titulo").textContent=variable;
+        }
+                      const C=()=>{
+            variable=""
+            document.getElementById("titulo2").textContent=variable;
+            
+            document.getElementById("titulo").textContent=variable;
         
+        }
 
     </script>
 
- 
+
+           
 
 </body>
 </html>
